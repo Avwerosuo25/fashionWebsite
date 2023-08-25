@@ -1,0 +1,971 @@
+/* Root and HTML styles */
+:root {
+  --primary-color: #f85f73;
+  --secondary-color: #ff7b8c;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #fff;
+  color: #333;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+
+/* Global styles */
+* {
+  box-sizing: border-box;
+}
+
+/* Navbar styles */
+.navbar {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: #fff;
+}
+
+.navbar-brand {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  margin-left: 20px;
+  color: #222;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* Jumbotron styles */
+.jumbotron {
+  background-image: url('../images/hero/hero-2.jpg');
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 150px 50px;
+}
+
+.jumbotron h1 {
+  font-weight: bold;
+}
+
+.display-4 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.lead {
+  font-size: 30px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+
+.btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  font-size: 20px;
+  font-weight: 500;
+}
+.btn-warning:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+}
+
+
+.about {
+  background-color: #f2f2f2;
+  padding: 80px 0;
+}
+
+.about h2 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.about p {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #666;
+  margin-bottom: 25px;
+}
+
+.about img {
+  width: 100%;
+  height: 600px;
+  border-radius: 5px;
+  margin-top: 40px;
+}
+
+.shop {
+  background-color: #f5f5f5;
+  padding: 50px 0;
+}
+
+.gallery {
+  background-color: #fff;
+  padding: 80px 0;
+  }
+  
+  .gallery h2 {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  }
+  
+  .gallery .card {
+  border: none;
+  margin-bottom: 30px;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery .card:hover {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.4);
+  }
+  
+  .gallery .card-img-top {
+  height: 220px;
+  }
+  
+  .gallery .card-title {
+  font-size: 24px;
+  font-weight: 600;
+  }
+  
+  .gallery .card-text {
+  font-size: 16px;
+  }
+  
+  .gallery .btn-warning {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  }
+  
+  .gallery .btn-warning:hover {
+  background-color: #ffc107;
+  border-color: #ffc107;
+  }
+
+  /* Reviews */
+
+  .reviews {
+    background-color: #f8f8f8;
+    padding: 50px 0;
+  }
+  
+  .reviews h2 {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  
+  .card {
+    border: none;
+    box-shadow: 0px 0px 10px #ccc;
+    padding: 20px;
+  }
+  
+  .card-img-top {
+    height: 50vh;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  /* test*/
+  .user {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+    padding-bottom: 1.5rem;
+  }
+  
+  .user-img-top {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .user-title {
+    color: var(--black);
+    font-size: 2rem;
+    padding-bottom: .5rem;
+  }
+  
+  .user-text {
+    font-size: 1.5rem;
+    line-height: 1.8;
+    color: var(--light-color);
+  }
+  
+/* stops */
+
+  .stars {
+    color: #ffc107;
+    margin-bottom: 20px;
+  }
+  
+  .fa-star {
+    font-size: 20px;
+  }
+  
+  .fa-star-half {
+    font-size: 20px;
+    position: relative;
+    display: inline-block;
+  }
+  
+ /* Contact section 
+.contact {
+  background-color: #f5f5f5;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.contact form {
+  margin-bottom: 30px;
+}
+
+.contact form label {
+  font-weight: bold;
+}
+
+.contact form input[type="text"],
+.contact form input[type="email"],
+.contact form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.contact form textarea {
+  height: 120px;
+}
+
+.contact form button[type="submit"] {
+  background-color: #363601;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  padding: 12px 30px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.contact form button[type="submit"]:hover {
+  background-color: #ffff00;
+}
+
+.contact-info h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.contact-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+
+.contact-info i {
+  margin-right: 10px;
+  font-size: 20px;
+  vertical-align: middle;
+} */
+
+.contact h2, p {
+  text-align: center;
+}
+
+.contact-options {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.contact-option {
+  text-align: center;
+  margin: 20px;
+  width: 200px;
+  transition: transform 0.3s ease;
+}
+
+.contact-option a {
+  display: block;
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.contact-option:hover {
+  transform: translateY(-5px);
+}
+
+.contact-option:hover a {
+  color: #777;
+}
+
+.contact-option i {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.contact-label {
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.contact-info {
+  margin-bottom: 0;
+}
+
+
+footer {
+  background-color: burlywood;
+  padding: 50px 0;
+}
+
+footer h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+footer h4 {
+  color: #333;
+}
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+
+footer ul li {
+  margin-bottom: 10px;
+}
+
+footer ul li a {
+  color: #666;
+  text-decoration: none;
+}
+
+footer ul li a:hover {
+  color: #333;
+}
+
+footer p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+footer .bg-dark {
+  background-color: #333;
+  padding: 10px 0;
+}
+
+footer .text-light {
+  color: #f8f8f8;
+  font-size: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Media queries */
+@media only screen and (max-width: 767px) {
+  /* Navbar styles */
+  .navbar {
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Jumbotron styles */
+  .jumbotron {
+    padding: 100px 20px;
+  }
+  
+  .display-4 {
+    font-size: 40px;
+  }
+  
+  .lead {
+    font-size: 24px;
+  }
+  
+  .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* About section styles */
+  .about img {
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Gallery section styles */
+  .gallery .card {
+    margin-bottom: 20px;
+  }
+  
+  .gallery .card-img-top {
+    height: 160px;
+  }
+  
+  .gallery .card-title {
+    font-size: 20px;
+  }
+  
+  .gallery .card-text {
+    font-size: 14px;
+  }
+  
+  .gallery .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* Reviews section styles */
+  .card-img-top {
+    height: 40vh;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
+  /* Test section styles */
+  .user-img-top {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .user-title {
+    font-size: 1.5rem;
+  }
+  
+  .user-text {
+    font-size: 1rem;
+  }
+}
+
+/* Media queries for specific screen sizes */
+@media screen and (max-width: 400px) and (max-height: 538px) {
+  /* Navbar styles */
+  .navbar {
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Jumbotron styles */
+  .jumbotron {
+    padding: 100px 20px;
+  }
+  
+  .display-4 {
+    font-size: 40px;
+  }
+  
+  .lead {
+    font-size: 24px;
+  }
+  
+  .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* About section styles */
+  .about img {
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Gallery section styles */
+  .gallery .card {
+    margin-bottom: 20px;
+  }
+  
+  .gallery .card-img-top {
+    height: 160px;
+  }
+  
+  .gallery .card-title {
+    font-size: 20px;
+  }
+  
+  .gallery .card-text {
+    font-size: 14px;
+  }
+  
+  .gallery .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* Reviews section styles */
+  .card-img-top {
+    height: 40vh;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
+  /* Test section styles */
+  .user-img-top {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .user-title {
+    font-size: 1.5rem;
+  }
+  
+  .user-text {
+    font-size: 1rem;
+  }
+}
+
+
+@media screen and (max-width: 768px) and (max-height: 1024px) {
+  /* Navbar styles */
+  .navbar {
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Jumbotron styles */
+  .jumbotron {
+    padding: 100px 20px;
+  }
+  
+  .display-4 {
+    font-size: 40px;
+  }
+  
+  .lead {
+    font-size: 24px;
+  }
+  
+  .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* About section styles */
+  .about img {
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Gallery section styles */
+  .gallery .card {
+    margin-bottom: 20px;
+  }
+  
+  .gallery .card-img-top {
+    height: 160px;
+  }
+  
+  .gallery .card-title {
+    font-size: 20px;
+  }
+  
+  .gallery .card-text {
+    font-size: 14px;
+  }
+  
+  .gallery .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* Reviews section styles */
+  .card-img-top {
+    height: 40vh;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
+  /* Test section styles */
+  .user-img-top {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .user-title {
+    font-size: 1.5rem;
+  }
+  
+  .user-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 820px) and (max-height: 1180px) {
+  /* Navbar styles */
+  .navbar {
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Jumbotron styles */
+  .jumbotron {
+    padding: 100px 20px;
+  }
+  
+  .display-4 {
+    font-size: 40px;
+  }
+  
+  .lead {
+    font-size: 24px;
+  }
+  
+  .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* About section styles */
+  .about img {
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Gallery section styles */
+  .gallery .card {
+    margin-bottom: 20px;
+  }
+  
+  .gallery .card-img-top {
+    height: 160px;
+  }
+  
+  .gallery .card-title {
+    font-size: 20px;
+  }
+  
+  .gallery .card-text {
+    font-size: 14px;
+  }
+  
+  .gallery .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* Reviews section styles */
+  .card-img-top {
+    height: 40vh;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
+  /* Test section styles */
+  .user-img-top {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .user-title {
+    font-size: 1.5rem;
+  }
+  
+  .user-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 600px) {
+  /* Navbar styles */
+  .navbar {
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Jumbotron styles */
+  .jumbotron {
+    padding: 100px 20px;
+  }
+  
+  .display-4 {
+    font-size: 40px;
+  }
+  
+  .lead {
+    font-size: 24px;
+  }
+  
+  .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* About section styles */
+  .about img {
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Gallery section styles */
+  .gallery .card {
+    margin-bottom: 20px;
+  }
+  
+  .gallery .card-img-top {
+    height: 160px;
+  }
+  
+  .gallery .card-title {
+    font-size: 20px;
+  }
+  
+  .gallery .card-text {
+    font-size: 14px;
+  }
+  
+  .gallery .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* Reviews section styles */
+  .card-img-top {
+    height: 40vh;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
+  /* Test section styles */
+  .user-img-top {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .user-title {
+    font-size: 1.5rem;
+  }
+  
+  .user-text {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 1280px) and (max-height: 800px) {
+  /* Navbar styles */
+  .navbar {
+    padding: 10px;
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+  }
+  
+  .nav-link {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+  
+  /* Jumbotron styles */
+  .jumbotron {
+    padding: 100px 20px;
+  }
+  
+  .display-4 {
+    font-size: 40px;
+  }
+  
+  .lead {
+    font-size: 24px;
+  }
+  
+  .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* About section styles */
+  .about img {
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+  }
+  
+  /* Gallery section styles */
+  .gallery .card {
+    margin-bottom: 20px;
+  }
+  
+  .gallery .card-img-top {
+    height: 160px;
+  }
+  
+  .gallery .card-title {
+    font-size: 20px;
+  }
+  
+  .gallery .card-text {
+    font-size: 14px;
+  }
+  
+  .gallery .btn-warning {
+    font-size: 16px;
+  }
+  
+  /* Reviews section styles */
+  .card-img-top {
+    height: 40vh;
+  }
+  
+  .card-title {
+    font-size: 18px;
+  }
+  
+  .card-text {
+    font-size: 14px;
+  }
+  
+  /* Test section styles */
+  .user-img-top {
+    height: 5rem;
+    width: 5rem;
+  }
+  
+  .user-title {
+    font-size: 1.5rem;
+  }
+  
+  .user-text {
+    font-size: 1rem;
+  }
+}
